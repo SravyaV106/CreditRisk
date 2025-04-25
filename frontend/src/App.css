@@ -1,0 +1,151 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  padding: 30px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+.App:hover {
+  transform: translateY(-5px);
+}
+
+h1 {
+  color: #333;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+input,
+select {
+  padding: 12px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.4);
+}
+
+button {
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+p {
+  font-size: 1rem;
+  color: #e74c3c;
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+div {
+  margin-top: 25px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.result p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.auth-btn {
+  padding: 12px;
+  margin-bottom: 25px;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+  font-weight: 600;
+}
+
+.auth-btn.logout {
+  background-color: #db4437;
+}
+
+.auth-btn:hover {
+  opacity: 0.9;
+}
+
+.error {
+  color: #e74c3c;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+@media (max-width: 500px) {
+  .App {
+    width: 90%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+}
