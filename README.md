@@ -2,6 +2,8 @@
 
 This web application helps banks and financial institutions assess the **credit risk** of loan applicants using **machine learning models**. It uses a React-based frontend, Firebase for authentication and real-time database, and a Python-based backend for predictive analytics.
 
+This link may not be available after sometime:
+https://credit-frountend.vercel.app/
 ---
 
 ## 🚀 Project Overview
@@ -61,3 +63,7 @@ We experimented with the following models:
 ---
 
 
+## 💻Deployment 
+- Flask api is deployed using Docker and google cloud platform
+- Frountend is dployed in vercel
+  
